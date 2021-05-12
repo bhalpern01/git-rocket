@@ -15,5 +15,5 @@ That's it!
 How to use it
 -------------
 
-# Be inside a git repo
-# Run "rocket" (or "elvis")
+1. Be inside a git repo
+2. Run "rocket" (or "elvis")
