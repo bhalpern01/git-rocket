@@ -23,6 +23,4 @@ MESSAGE=${MESSAGES[$IDX]}
 
 
 # Git add, commit, push
-git add .
-git commit -m "$MESSAGE"
-git push
+git commit -am "$MESSAGE" && git push
