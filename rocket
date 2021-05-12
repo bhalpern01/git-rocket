@@ -1,0 +1,27 @@
+#!/bin/bash
+
+# Array of random commit messages
+MESSAGES=(
+"Got to go fast!"
+"I have to go, I have to go, I have to go (The pajamas)"
+"Elvis has left the building (and so did I!)"
+"Did I do that?"
+"To the Batcave!"
+"It wasn't me!"
+"Meeting in the mamad now. Will fix this later."
+"Winter is coming"
+"Run away! Run away!"
+"Back in five minutes. Don't change anything!"
+)
+
+
+# Randomly choose one of the messages
+IDX=$(( ( RANDOM % ${#MESSAGES[@]} ) ))
+
+MESSAGE=${MESSAGES[$IDX]}
+
+
+# Git add, commit, push
+git add .
+git commit -m "$MESSAGE"
+git push
